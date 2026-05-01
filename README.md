@@ -1,2 +1,2 @@
-# college_intro_to_cpp
+# Introduction to C++
 My course work in College for C++.
