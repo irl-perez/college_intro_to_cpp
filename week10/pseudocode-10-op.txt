@@ -1,0 +1,71 @@
+// custom photo finishing
+class Photo
+{
+    private:
+        double width
+        double height
+    public:
+        double getWidth()
+        void setWidth(double w)
+        double getHeight()
+        void setHeight(double h)
+        double calculatePrice()
+        void display()
+}
+
+
+// define the functions -- remember to prefix with class name
+
+double getWidth() const // good practice to avoid code trying to change something
+{
+    return width
+}
+
+void setWidth(double w)
+{
+    width = w
+}
+
+double getHeight() const
+{
+    return height
+}
+
+void setHeight(double h)
+{
+    height = h
+}
+
+double calculatePrice()
+{
+    double price;
+    double totalSqIn;
+
+    // get object's h and w
+    w = self.getWidth
+    h = self.getHeight
+
+    if (w = 8 and h = 10) or (w = 10 and h = 8)
+        price = 3.99
+    else if (w = 10 and h = 12) or (w = 12 and h = 10)
+        price = 5.99
+    else
+        price = 9.99 // custom cutting size
+
+    return price
+
+}
+
+void display()
+{
+    // dispaly all values
+    - width
+    - height
+    - price
+}
+
+int main()
+{
+    // create instance of class.
+
+}
