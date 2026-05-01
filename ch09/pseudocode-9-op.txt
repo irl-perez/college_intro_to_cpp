@@ -1,0 +1,55 @@
+structure Division // include fields:
+{
+    string divison name:
+    double q1_sales
+    double q2_sales
+    double q3_sales    
+    double q4_sales
+    double total_annual_sales
+    double avg_quarterly_sales
+}
+
+// create a variable for each division
+
+Division east
+Division west
+Division south
+Division north
+
+[prompt the user to enter sales figures for all quarters]
+
+calculate_total_sales(pass structure) // pass for each divison
+calculate_avg_sales(pass structure) // pass for each divison
+
+// display output neatly. for each division. iomanip
+cout << east.q1_sales
+cout << east.q2_sales
+cout << east.q3_sales
+cout << east.q4_sales
+cout << east.total_annual_sales
+cout << east.avg_quarterly_sales
+// repeat for other locations and clean up output so it looks nice 
+
+// define functions
+void calculate_total_sales(div&) // division pass my reference since we assign value directly to the divison
+{
+    double toal_sales
+    total_sales += div.q1_sales
+    total_sales += div.q2_sales
+    total_sales += div.q3_sales
+    total_sales += div.q4_sales
+
+    div.total_annual_sales = total_sales
+
+    
+}
+
+void calculate_avg_sales(div&)
+{
+    double avg_sales = calculate_total_sales(div) // call the function from before
+    avg_sales = avg_sales / 4 
+
+    div.avg_quarterly_sales = avg_sales
+}
+
+

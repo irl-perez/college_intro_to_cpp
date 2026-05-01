@@ -1,0 +1,63 @@
+// this is part two using data files instead of user input
+
+// within main have a function that calls for fileIngestion
+
+int main()
+{
+
+// other code here
+// add to debug mode the name of the files to avoid having to retest
+    fileName = "data.txt";
+
+char continueUserInput;
+bool continueFlag = true;
+
+
+
+do
+{
+    
+    // appending to array 
+    DivisionList[total_divisions] = fileDataIngestion(fileName);
+
+    if continueUserInput == 'y' or 'Y'
+        continue = false; 
+
+}while(continue)
+
+// call the rest of the day
+
+}
+
+
+struct DivisionInfo fileDataIngestion(string fileName)
+{
+    ifstream inputFile(fileName);
+
+    if (inputFile.fail())
+        [output error]
+        return 0;
+    
+    DivisionInfo currentDiv; // my structure
+    
+    while(!inputFile.eof())
+    {
+        string line;
+
+        currentDiv.div_name = getLine(inputFile, line);
+        currentDiv.q1Sales = getLine(inputFile, line);
+        currentDiv.q2Sales = getLine(inputFile, line);
+        currentDiv.q3Sales = getLine(inputFile, line);
+        currentDiv.q4Sales = getLine(inputFile, line);
+        currentDiv.totalAnnualSales = 0;
+        currentDiv.avgQuarterlySales = 0;
+
+    }
+
+    return currentDiv
+
+    
+
+}
+
+// locate the output function and modify it so it writes and appends to a file. avoid creating a new fuction

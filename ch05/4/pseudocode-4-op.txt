@@ -1,0 +1,27 @@
+
+// variables
+double distance, speed;
+
+int time_in_hours;
+
+// user input
+speed = [prompt user for speed]
+time_in_hours = [prompt user for hours]
+
+// loop
+// look has hours_elapsed to track time that past, we always start at 1
+// if hours_elapsed < or = time_in_hours we're not done, we run the loop
+// finally hours_elapsed is increased
+
+for (int hours_elapsed = 1; hours_elapsed <= time_in_hours; hours_elapsed++)
+{
+
+	// calculate distance thus far
+	distance += speed * count // using += to keep on going track
+	
+	[display header]
+
+	[display: count] // this is the hours column
+	[display: distance] // this is the distane column
+
+}

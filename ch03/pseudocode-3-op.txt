@@ -1,0 +1,65 @@
+/*
+### NOTES ###
+
+Calculation for monthly payment on loan:
+monthlyPayment = ((rate * pow(1+rate, n)) / ((pow(1+rate, n) - 1))) * loanAmount
+
+key points of information:
+- annual interest rate
+- number of payments
+- loanAmount
+
+final pieces of information:
+X- loan amount: given by the user
+x- monthly interest rate: annual rate / 12 (where annual rate is given by the user)
+X- number of payments: given by the user
+x- monthly payment: calculated by the program
+x - total amount to pay: monthlyPayment * numberOfPayments?
+x - total interested paid: ???
+*/
+
+// variables
+double  numberOfPayments, 	// assuming could be fractional
+		loanAmount,			// user input
+		annualInterestRate, // user input
+		monthlyInterestRate,// user input
+		monthlyPayment,		// formula
+		grandTotal,			// monthlyPayment * numberOfPayments?
+		totalInterestedPaid // grandTotal - loanAmount
+
+// userinput
+[prompt user]
+annualInterestRate = [user input]
+
+[prompt user]
+loanAmount = [user input]
+
+[prompt user]
+numberOfPayments = [user input]
+
+// calculations
+monthlyInterestRate = (annualInterestRate / 100) / 12 // make sure to divide interest rate by 100 to turn it into decmial representing out percentage. divide the annualInterest by 12
+
+monthlyPayment = ((monthlyInterestRate * pow(1+monthlyInterestRate, numberOfPayments)) / ((pow(1+monthlyInterestRate, numberOfPayments) - 1))) * loanAmount // given to us, thank you professor
+
+grandTotal = monthlyPayment * numberOfPayments // total length of loan multiplied by monthly payment = total amount paid
+
+totalInterestedPaid = grandTotal - loanAmount // total amount paid - initial loan, gives us the interest 
+
+// output:
+display: loanAmount
+display: monthlyInterestRate
+display: numberOfPayments
+
+// insert line break
+
+display: monthlyPayment
+display: grandTotal
+display: totalInterestedPaid
+
+
+
+
+
+
+

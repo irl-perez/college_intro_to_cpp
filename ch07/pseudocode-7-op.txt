@@ -1,0 +1,74 @@
+// Oscar Perez - Rainfall Statistics
+
+// variables
+const int TOTAL_MONTHS = 12
+
+array months[TOTAL_MONTHS] = {'jan', 'feb', etc..}
+array rainfall[TOTAL_MONTHS]
+int index = 0 // a way to keep track of record and month
+
+// functions
+double calcTotalRain(double nums[])
+{
+    int totalSum = 0;
+    for (int index = 0; index < size; index++)
+    {
+        totalSum += rain
+    }
+
+    return totalSum
+}
+
+double calcAvgMonthlyRain(double nums[], const int size)
+{
+    double averagRain = 0
+
+    totalRain = calcTotalRain(nums) // call the written function to get total rain
+
+    averagRain = totalRain / size
+    return averagRain
+}
+
+string findRainestMonth(double nums[], string months[], const int size)
+{
+
+    highestRain = nums[0]
+    index = 0
+    for (int counter = 1 ; counter < size; counter++)
+    {
+        if nums[counter] > highestRain
+            highestRain = nums[counter]
+            index = counter
+
+    }
+
+    return month[index] // returns the month name
+
+}
+
+string findDriestMonth(double nums[], string months[], const int size)
+{
+
+    highestRain = nums[0]
+    index = 0
+    for (int counter = 1 ; counter < size; counter++)
+    {
+        if nums[counter] < highestRain // same logic, but we want the smallest value
+            highestRain = nums[counter]
+            index = counter
+
+    }
+
+    return month[index] // returns the month name
+
+}
+
+
+
+// code i worte for testing values faster, as you said Professor, make things work first then make it look better later:
+    double testValues[TOTAL_MONTHS] = {18.94, 34.08, 32.38, 18.33, 32.81, 35.05, 23.23, 17.05, 18.12, 23.18, 32.03, 33.05};
+
+    cout << calcTotalRain(testValues, TOTAL_MONTHS) << endl; 
+    cout << calcAvgMonthlyRain(testValues, TOTAL_MONTHS) << endl;
+    cout << findRainestMonth (testValues,MONTHS,TOTAL_MONTHS) << endl;
+    cout << findDriesttMonth(testValues,MONTHS,TOTAL_MONTHS) << endl;

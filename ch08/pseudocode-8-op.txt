@@ -1,0 +1,43 @@
+// Oscar Perez - Vowels and Constants
+
+const SIZE = 100; // c-strings are arrays so we need to create one
+char menuSelection;
+string sentence[SIZE];
+
+[prompt user for sentence]
+while (menuSelection != 'd') // control the whole program loop keeps the program running.
+    [prompt user for menu selection]
+    
+    switch // funtion calls depending on the option selected
+        a: countVowls(sentence)
+        b: countConsontants(sentence)
+        c: [prompt user for input again =]
+        d: [exit program]
+
+
+isVowl(character)
+
+    tolower(character) // lowercase to compare
+    return if(character in 'a', 'e', 'i' 'o', 'u') // check for vowel
+
+
+countVowls(sentence) // pointer to string
+
+    int counter = 0
+    for (int i = 0; sentence[i] != '\0'; i += 1) // stop when reaching nullterm
+
+        if isVowl(sentence[i])
+            counter += 1
+
+    return counter
+
+countConsontants(sentence) // pointer to string
+
+    int counter = 0
+    for (int i = 0; sentence[i] != '\0'; i += 1) // stop when reaching nullterm
+
+        if (!isVowl(sentence[i]) && isalpha(sentence[i])) // invert to false also check for alpha since we aren't comparing to all values
+            counter += 1
+    
+    return counter
+

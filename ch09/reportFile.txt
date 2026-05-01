@@ -1,0 +1,32 @@
+Division Name:                          North
+Q1 sales:                               $6000
+Q2 sales:                               $60000.1
+Q3 sales:                               $12000.5
+Q4 sales:                               $2000.03
+Total Annual Sales:                     $80000.7
+Average Quarterly Sales:                $20000.2
+
+Division Name:                          East
+Q1 sales:                               $2.5
+Q2 sales:                               $60.3
+Q3 sales:                               $800.3
+Q4 sales:                               $39567.2
+Total Annual Sales:                     $40430.3
+Average Quarterly Sales:                $10107.6
+
+Division Name:                          West
+Q1 sales:                               $69.38
+Q2 sales:                               $485.3
+Q3 sales:                               $134.36
+Q4 sales:                               $44.12
+Total Annual Sales:                     $733.16
+Average Quarterly Sales:                $183.29
+
+Division Name:                          South
+Q1 sales:                               $583.12
+Q2 sales:                               $466.05
+Q3 sales:                               $4683.36
+Q4 sales:                               $66666.7
+Total Annual Sales:                     $72399.2
+Average Quarterly Sales:                $18099.8
+

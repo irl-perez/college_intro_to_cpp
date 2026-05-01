@@ -1,0 +1,33 @@
+// comments:
+/*
+
+### NOTES ###
+- amount paid for stocks
+- amount of the broker's commission
+    - 2% commission
+- total amount paid by inventory
+
+*/
+
+// variables
+CONSANT double COMISSION = .02
+double numOfShares, pricePerShare, brokersCommission, stockSubTotal, grandTotal
+ 
+
+// userinput
+numOfShares = [user input]
+pricePerShare = [user input]
+
+// amount paid for stock alone
+stockSubTotal = numOfShares * pricePerShare
+
+// brokers commission
+brokersCommission = stockSubTotal * COMISSION
+
+// grand total for both the stock + commission
+grandTotal = stockSubTotal + brokersCommission
+
+// outputs
+display: stockSubTotal
+display: brokersCommission
+display: grandTotal

@@ -1,0 +1,68 @@
+
+/*
+NOTES 
+Options below include:
+	- circle
+	- rectangle
+	- triangle
+
+OSCAR DO NOT FORGET ABOUT MULTIPLE SCREENSHOTS FOR EACH OPTION 5+ screenshots
+*/
+
+CONST pi = 3.14159
+double area;
+
+option = [prompt user for option]
+
+
+switch(option)
+
+	case 1 // circle option
+		double radius
+		
+		radius = [prompt user for radius]
+
+		// check if radius is negative
+		if radius < 0
+			
+			[display error to user]
+
+		else
+
+			[calculate and display area of circle]
+
+
+	case 2 // rectangle
+		double, length, width
+
+		length = [prompt the user for length]
+		width  = [prompt the user for width]
+
+		if length or width < 0
+
+			[display error to user]
+
+		else
+
+			[calculate and display area of rectangle]
+
+	case 3 // triangle
+
+		double base, height
+
+		base = [prompt the user for base]
+		height [prompt the user for height]
+
+		if base or height < 0
+
+			[display error to user]
+
+		else
+
+			[calculate and display area of triangle]
+
+	default
+
+		[display error - tell user to select the correct option]
+
+

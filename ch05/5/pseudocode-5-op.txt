@@ -1,0 +1,26 @@
+// variables
+
+CONST int CORRECT_NUMBER = 1 + rand() % 1000 // number between 1 and 1000
+
+int player_guess = 0
+int number_of_guesses = 0
+
+[display introduction]
+[display instructions]
+
+while (player_guess != CORRECT_NUMBER)
+{
+	player_guess = [get input]
+
+	if (player_guess < 0)
+		[display enter a number greater than 0]
+	else if (player_guess > 1000)
+		[display enter a number less than or equal to 1000]
+	else if (player_guess > CORRECT_NUMBER)
+		[display guess is too high]
+	else if (player_guess < CORRECT_NUMBER)
+		[display guess is too low]
+
+	number_of_guesses++
+	
+}
