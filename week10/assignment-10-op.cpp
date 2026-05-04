@@ -82,7 +82,7 @@ void Photo::display()
     cout << "Please see below for the properties of your photo:" << endl;
     cout << "Width:\t" << getWidth() << endl;
     cout << "Height:\t" << getHeight() << endl;
-    cout << "Calculated price:\t" << calculatePrice << endl;
+    cout << "Calculated price:\t" << calculatePrice() << endl;
 }
 
 
@@ -113,9 +113,18 @@ int main ()
     PhotoList[4] = p5;
     PhotoList[5] = p6;
 
-    for (int i = 0; i < TOTAL_PHOTOS, i += 1;)
+    cout << fixed << setprecision(2) << showpoint;
+    for (int i = 0; i < TOTAL_PHOTOS; i += 1)
     {
         // loop through array and run all functions.
+        
+        Photo currentPhoto;
+        cout << "Photo " << i + 1 << endl;
+        currentPhoto.setWidth(PhotoList[i].width);
+        currentPhoto.setHeight(PhotoList[i].height);
+        
+        currentPhoto.display();
+        cout << endl;
     }
 
     return 0;
