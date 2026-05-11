@@ -1,0 +1,41 @@
+
+// need to create subclas of photo
+
+class MattedPhoto : Photo
+{
+    private:
+        string color; // new place to hold color name
+
+    public:
+    void display(); // change the code to include the new information!
+    {
+        [show base info]
+        [show color]
+        [show increase price]
+    }
+
+    string getColor(); // retun color 
+
+}
+
+// samething here 
+class FramedPhoto : Photo
+{
+    private:
+        // new member variables
+        string material; 
+        string style;
+
+    public:
+    void display(); // change the code to include the new information!
+    {
+        [show base info]
+        [show material]
+        [show style]
+        [show increase price]
+    }
+
+    string getMaterial();
+    string getStyle();
+
+}

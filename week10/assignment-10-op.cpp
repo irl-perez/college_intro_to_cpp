@@ -1,4 +1,4 @@
-// Oscar Perez - corp sales
+// Oscar Perez - photo 1
 #include <iostream>
 #include <iomanip>
 #include <cctype>
